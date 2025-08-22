@@ -5,7 +5,7 @@ import Icon from '@/components/ui/icon';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-amber-50 to-amber-25" style={{backgroundColor: '#fefcf8'}}>
       {/* Header */}
       <header className="border-b bg-white/95 backdrop-blur-sm sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -51,7 +51,7 @@ const Index = () => {
       </section>
 
       {/* Benefits Section */}
-      <section id="benefits" className="py-20 bg-gray-50">
+      <section id="benefits" className="py-20 bg-amber-25" style={{backgroundColor: '#fdf9f3'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Для чего нужны шахматы?</h2>
@@ -147,7 +147,7 @@ const Index = () => {
       </section>
 
       {/* Pricing Section */}
-      <section id="pricing" className="py-20 bg-gray-50">
+      <section id="pricing" className="py-20 bg-amber-25" style={{backgroundColor: '#fdf9f3'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Стоимость занятий</h2>
@@ -248,13 +248,31 @@ const Index = () => {
               <Icon name="Phone" className="mr-2" size={20} />
               Позвонить
             </Button>
-            <Button size="lg" variant="outline" className="border-gray-300 text-gray-700 px-8">
-              <Icon name="Mail" className="mr-2" size={20} />
-              Написать
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="border-purple-300 text-purple-700 hover:bg-purple-50 px-8"
+              asChild
+            >
+              <a href="https://lichess.org/@/Olga31" target="_blank" rel="noopener noreferrer">
+                <svg className="mr-2" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                </svg>
+                Lichess
+              </a>
             </Button>
-            <Button size="lg" variant="outline" className="border-gray-300 text-gray-700 px-8">
-              <Icon name="MessageCircle" className="mr-2" size={20} />
-              Telegram
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="border-blue-300 text-blue-700 hover:bg-blue-50 px-8"
+              asChild
+            >
+              <a href="https://t.me/olarudometova" target="_blank" rel="noopener noreferrer">
+                <svg className="mr-2" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM9.8 17.3l.4-1.9L17.4 9c.3-.3 0-.4-.4-.1l-9.4 5.9-2.6-.8c-.6-.2-.6-.6.1-.9L19.3 7.1c.5-.2 1 .3.7 1.1l-2.2 10.1c-.1.5-.5.7-.9.4l-2.5-1.9-1.2 1.2c-.1.1-.3.2-.4.2z"/>
+                </svg>
+                Telegram
+              </a>
             </Button>
           </div>
         </div>
