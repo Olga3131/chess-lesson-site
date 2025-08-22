@@ -126,11 +126,9 @@ const Index = () => {
 
             <Card className="hover:shadow-xl transition-all duration-300 border-0 bg-white">
               <CardHeader className="text-center">
-                <img
-                  src="/img/69272848-3c4a-4bcd-8ae1-381792eaa5c9.jpg"
-                  alt="Мастер FIDE"
-                  className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
-                />
+                <div className="w-24 h-24 bg-gradient-to-br from-amber-500 to-amber-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <span className="text-white text-2xl font-bold">FM</span>
+                </div>
                 <CardTitle className="text-2xl">Мастер FIDE</CardTitle>
                 <Badge variant="secondary" className="bg-amber-100 text-amber-800 font-semibold">FIDE Master</Badge>
               </CardHeader>
@@ -147,11 +145,9 @@ const Index = () => {
           <div className="mt-8 flex justify-center">
             <Card className="hover:shadow-xl transition-all duration-300 border-0 bg-white max-w-md">
               <CardHeader className="text-center">
-                <img
-                  src="/img/69b4aad7-ed56-4593-80b5-e424176be195.jpg"
-                  alt="Международный мастер"
-                  className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
-                />
+                <div className="w-24 h-24 bg-gradient-to-br from-purple-600 to-purple-700 rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <span className="text-white text-2xl font-bold">IM</span>
+                </div>
                 <CardTitle className="text-2xl">Международный мастер</CardTitle>
                 <Badge variant="secondary" className="bg-amber-100 text-amber-800 font-semibold">International Master</Badge>
               </CardHeader>
