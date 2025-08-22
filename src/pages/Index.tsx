@@ -108,7 +108,7 @@ const Index = () => {
             <Card className="hover:shadow-xl transition-all duration-300 border-0 bg-white">
               <CardHeader className="text-center">
                 <img
-                  src="/img/d0cf2dd9-ef1f-40cc-9eb2-66f548984e06.jpg"
+                  src="https://cdn.poehali.dev/files/7b7de451-d790-434c-9cc0-7a9c885e776a.jpg"
                   alt="ollachess тренер"
                   className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
                 />
