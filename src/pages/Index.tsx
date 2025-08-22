@@ -14,10 +14,11 @@ const Index = () => {
               <div className="w-8 h-8 bg-gray-900 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-lg">♔</span>
               </div>
-              <span className="text-xl font-bold text-gray-900">ChessMaster</span>
+              <span className="text-xl font-bold text-gray-900">ollachess</span>
             </div>
             <nav className="hidden md:flex space-x-8">
               <a href="#benefits" className="text-gray-600 hover:text-gray-900 transition-colors">О пользе шахмат</a>
+              <a href="#format" className="text-gray-600 hover:text-gray-900 transition-colors">Формат занятий</a>
               <a href="#trainers" className="text-gray-600 hover:text-gray-900 transition-colors">Тренеры</a>
               <a href="#pricing" className="text-gray-600 hover:text-gray-900 transition-colors">Стоимость</a>
               <a href="#contact" className="text-gray-600 hover:text-gray-900 transition-colors">Контакты</a>
@@ -37,13 +38,17 @@ const Index = () => {
               Профессиональные уроки шахмат с опытными тренерами. Развивайте стратегическое мышление, логику и концентрацию с лучшими мастерами игры.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-4 text-lg">
-                <Icon name="Play" className="mr-2" size={20} />
-                Начать обучение
+              <Button size="lg" className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-4 text-lg" asChild>
+                <a href="#pricing">
+                  <Icon name="Play" className="mr-2" size={20} />
+                  Начать обучение
+                </a>
               </Button>
-              <Button size="lg" variant="outline" className="border-gray-300 text-gray-700 px-8 py-4 text-lg">
-                <Icon name="Phone" className="mr-2" size={20} />
-                Связаться с нами
+              <Button size="lg" variant="outline" className="border-gray-300 text-gray-700 px-8 py-4 text-lg" asChild>
+                <a href="#contact">
+                  <Icon name="MessageCircle" className="mr-2" size={20} />
+                  Связаться с нами
+                </a>
               </Button>
             </div>
           </div>
@@ -93,6 +98,60 @@ const Index = () => {
                 <p className="text-gray-600">Шахматы учат планировать на несколько ходов вперёд и адаптироваться к изменяющимся условиям.</p>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Format Section */}
+      <section id="format" className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Онлайн занятия</h2>
+            <p className="text-xl text-gray-600">Повышаем ваш рейтинг на Lichess и Chess.com</p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Цель занятий</h3>
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <Icon name="Target" className="text-amber-500 mr-3 mt-1" size={20} />
+                  <span className="text-gray-700">Повышение рейтинга на Lichess и Chess.com</span>
+                </li>
+                <li className="flex items-start">
+                  <Icon name="TrendingUp" className="text-amber-500 mr-3 mt-1" size={20} />
+                  <span className="text-gray-700">Повышение уровня игры и понимания шахмат</span>
+                </li>
+                <li className="flex items-start">
+                  <Icon name="Users" className="text-amber-500 mr-3 mt-1" size={20} />
+                  <span className="text-gray-700">Занятия для детей и взрослых</span>
+                </li>
+                <li className="flex items-start">
+                  <Icon name="Award" className="text-amber-500 mr-3 mt-1" size={20} />
+                  <span className="text-gray-700">Подготовка к турнирам и соревнованиям</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Формат обучения</h3>
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <Icon name="Video" className="text-amber-500 mr-3 mt-1" size={20} />
+                  <span className="text-gray-700">Онлайн занятия через видеосвязь</span>
+                </li>
+                <li className="flex items-start">
+                  <Icon name="Clock" className="text-amber-500 mr-3 mt-1" size={20} />
+                  <span className="text-gray-700">Гибкое расписание - в удобное для вас время</span>
+                </li>
+                <li className="flex items-start">
+                  <Icon name="BookOpen" className="text-amber-500 mr-3 mt-1" size={20} />
+                  <span className="text-gray-700">Персональные домашние задания</span>
+                </li>
+                <li className="flex items-start">
+                  <Icon name="BarChart" className="text-amber-500 mr-3 mt-1" size={20} />
+                  <span className="text-gray-700">Анализ ваших партий на платформах</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -212,7 +271,7 @@ const Index = () => {
             <Card className="hover:shadow-lg transition-all duration-300 border-0 bg-white relative">
               <CardHeader className="text-center pb-4">
                 <CardTitle className="text-xl mb-2">Мастер FIDE и IM</CardTitle>
-                <div className="text-3xl font-bold text-gray-900 mb-2">3 000 ₽</div>
+                <div className="text-3xl font-bold text-gray-900 mb-2">4 000 ₽</div>
                 <p className="text-gray-500">за занятие</p>
               </CardHeader>
               <CardContent className="space-y-3">
@@ -244,10 +303,6 @@ const Index = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Связаться с нами</h2>
           <p className="text-xl text-gray-600 mb-8">Готовы начать обучение? Свяжитесь с нами для записи на первое занятие</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-gray-900 hover:bg-gray-800 text-white px-8">
-              <Icon name="Phone" className="mr-2" size={20} />
-              Позвонить
-            </Button>
             <Button 
               size="lg" 
               variant="outline" 
@@ -286,10 +341,10 @@ const Index = () => {
               <div className="w-8 h-8 bg-amber-500 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-lg">♔</span>
               </div>
-              <span className="text-xl font-bold">ChessMaster</span>
+              <span className="text-xl font-bold">ollachess</span>
             </div>
             <div className="text-gray-400">
-              © 2024 ChessMaster. Все права защищены.
+              © 2024 ollachess. Все права защищены.
             </div>
           </div>
         </div>
