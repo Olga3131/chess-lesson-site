@@ -176,9 +176,11 @@ const Index = () => {
           </div>
           <div className="text-center mt-12">
             <p className="text-gray-600 mb-4">После прохождения тестов свяжитесь с нами для получения персональных рекомендаций</p>
-            <Button size="lg" variant="outline" className="border-amber-300 text-amber-700 hover:bg-amber-50">
-              <Icon name="MessageCircle" className="mr-2" size={20} />
-              Получить консультацию
+            <Button size="lg" variant="outline" className="border-amber-300 text-amber-700 hover:bg-amber-50" asChild>
+              <a href="#contact">
+                <Icon name="MessageCircle" className="mr-2" size={20} />
+                Получить консультацию
+              </a>
             </Button>
           </div>
         </div>
@@ -269,7 +271,7 @@ const Index = () => {
               <CardHeader className="text-center">
                 <div className="flex justify-center gap-2 mb-4">
                   <Badge className="bg-amber-500 text-white font-semibold">FM</Badge>
-                  <Badge className="bg-blue-600 text-white font-semibold">2900+</Badge>
+                  <Badge className="bg-blue-600 text-white font-semibold">Lichess 2900+</Badge>
                 </div>
                 <CardTitle className="text-2xl">Мастер FIDE</CardTitle>
               </CardHeader>
