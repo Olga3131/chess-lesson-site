@@ -124,7 +124,7 @@ const Index = () => {
                   className="w-full bg-red-600 hover:bg-red-700 text-white" 
                   asChild
                 >
-                  <a href="/test-taktika.pdf" download="Тест_Тактика.pdf">
+                  <a href="/Тест Тактика.pdf" download="Тест_Тактика.pdf">
                     <Icon name="Download" className="mr-2" size={16} />
                     Скачать тест
                   </a>
@@ -145,7 +145,7 @@ const Index = () => {
                   className="w-full bg-blue-600 hover:bg-blue-700 text-white" 
                   asChild
                 >
-                  <a href="/strategiya.pdf" download="Стратегия.pdf">
+                  <a href="/Стратегия.pdf" download="Стратегия.pdf">
                     <Icon name="Download" className="mr-2" size={16} />
                     Скачать тест
                   </a>
@@ -166,7 +166,7 @@ const Index = () => {
                   className="w-full bg-green-600 hover:bg-green-700 text-white" 
                   asChild
                 >
-                  <a href="/endshpil.pdf" download="Эндшпиль.pdf">
+                  <a href="/Эндшпиль.pdf" download="Эндшпиль.pdf">
                     <Icon name="Download" className="mr-2" size={16} />
                     Скачать тест
                   </a>
