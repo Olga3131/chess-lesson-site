@@ -18,6 +18,7 @@ const Index = () => {
             </div>
             <nav className="hidden md:flex space-x-8">
               <a href="#benefits" className="text-gray-600 hover:text-gray-900 transition-colors">О пользе шахмат</a>
+              <a href="#test" className="text-gray-600 hover:text-gray-900 transition-colors">Проверь свой уровень</a>
               <a href="#format" className="text-gray-600 hover:text-gray-900 transition-colors">Формат занятий</a>
               <a href="#trainers" className="text-gray-600 hover:text-gray-900 transition-colors">Тренеры</a>
               <a href="#pricing" className="text-gray-600 hover:text-gray-900 transition-colors">Стоимость</a>
@@ -98,6 +99,87 @@ const Index = () => {
                 <p className="text-gray-600">Шахматы учат планировать на несколько ходов вперёд и адаптироваться к изменяющимся условиям.</p>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Test Section */}
+      <section id="test" className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Проверь свой уровень шахмат</h2>
+            <p className="text-xl text-gray-600">Бесплатные тесты для проверки ваших знаний</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="hover:shadow-xl transition-all duration-300 border-0 bg-white">
+              <CardHeader className="text-center pb-4">
+                <div className="w-16 h-16 mx-auto mb-4 bg-red-100 rounded-full flex items-center justify-center">
+                  <Icon name="Zap" className="text-red-600" size={32} />
+                </div>
+                <CardTitle className="text-xl mb-2">Тактика</CardTitle>
+                <p className="text-gray-600">Проверьте свои навыки решения тактических задач</p>
+              </CardHeader>
+              <CardContent className="text-center">
+                <Button 
+                  className="w-full bg-red-600 hover:bg-red-700 text-white" 
+                  asChild
+                >
+                  <a href="/test-taktika.pdf" download="Тест_Тактика.pdf">
+                    <Icon name="Download" className="mr-2" size={16} />
+                    Скачать тест
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-all duration-300 border-0 bg-white">
+              <CardHeader className="text-center pb-4">
+                <div className="w-16 h-16 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
+                  <Icon name="Brain" className="text-blue-600" size={32} />
+                </div>
+                <CardTitle className="text-xl mb-2">Стратегия</CardTitle>
+                <p className="text-gray-600">Оцените понимание стратегических принципов</p>
+              </CardHeader>
+              <CardContent className="text-center">
+                <Button 
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white" 
+                  asChild
+                >
+                  <a href="/strategiya.pdf" download="Стратегия.pdf">
+                    <Icon name="Download" className="mr-2" size={16} />
+                    Скачать тест
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-all duration-300 border-0 bg-white">
+              <CardHeader className="text-center pb-4">
+                <div className="w-16 h-16 mx-auto mb-4 bg-green-100 rounded-full flex items-center justify-center">
+                  <Icon name="Flag" className="text-green-600" size={32} />
+                </div>
+                <CardTitle className="text-xl mb-2">Эндшпиль</CardTitle>
+                <p className="text-gray-600">Проверьте знания техники окончаний</p>
+              </CardHeader>
+              <CardContent className="text-center">
+                <Button 
+                  className="w-full bg-green-600 hover:bg-green-700 text-white" 
+                  asChild
+                >
+                  <a href="/endshpil.pdf" download="Эндшпиль.pdf">
+                    <Icon name="Download" className="mr-2" size={16} />
+                    Скачать тест
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+          <div className="text-center mt-12">
+            <p className="text-gray-600 mb-4">После прохождения тестов свяжитесь с нами для получения персональных рекомендаций</p>
+            <Button size="lg" variant="outline" className="border-amber-300 text-amber-700 hover:bg-amber-50">
+              <Icon name="MessageCircle" className="mr-2" size={20} />
+              Получить консультацию
+            </Button>
           </div>
         </div>
       </section>
@@ -187,12 +269,12 @@ const Index = () => {
               <CardHeader className="text-center">
                 <div className="flex justify-center gap-2 mb-4">
                   <Badge className="bg-amber-500 text-white font-semibold">FM</Badge>
-                  <Badge className="bg-purple-600 text-white font-semibold">IM</Badge>
+                  <Badge className="bg-blue-600 text-white font-semibold">2900+</Badge>
                 </div>
-                <CardTitle className="text-2xl">Мастер FIDE и Международный мастер</CardTitle>
+                <CardTitle className="text-2xl">Мастер FIDE</CardTitle>
               </CardHeader>
               <CardContent className="text-center space-y-4">
-                <p className="text-gray-600">Официальный мастер FIDE с международным признанием. Подготовка к турнирам и работа с продвинутыми игроками.</p>
+                <p className="text-gray-600">Официальный мастер FIDE с максимальным рейтингом 2900+ на Lichess. Подготовка к турнирам и работа с продвинутыми игроками.</p>
                 <div className="flex justify-center space-x-4 text-sm text-gray-500">
                   <span className="flex items-center"><Icon name="Star" size={16} className="mr-1" /> Рейтинг 2300+</span>
                   <span className="flex items-center"><Icon name="Trophy" size={16} className="mr-1" /> Турниры FIDE</span>
@@ -244,7 +326,7 @@ const Index = () => {
                 <Badge className="bg-amber-500 text-white">Популярный</Badge>
               </div>
               <CardHeader className="text-center pb-4">
-                <CardTitle className="text-xl mb-2">Мастер FIDE и IM</CardTitle>
+                <CardTitle className="text-xl mb-2">Мастер FIDE (рейтинг 2900+ на Lichess)</CardTitle>
                 <div className="text-3xl font-bold text-gray-900 mb-2">3 000 ₽</div>
                 <p className="text-gray-500">за занятие</p>
               </CardHeader>
